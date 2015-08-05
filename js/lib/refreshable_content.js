@@ -2,7 +2,7 @@ var RefreshableContent = (function (Render) {
     var _render = null;
 
     var _init = function () {
-        $('[update-content-handler]').on('click', function () {
+        $('[update-content-trigger]').on('click', function () {
             var customCallback = $(this).data('callback');
             _requestUpdate($(this).data('update-url'), function (resp) {
                 _updateHTML(resp);

@@ -33,8 +33,8 @@ $r = new Render(new Mustache_Engine());
     <div content-id="component2">
         <?php echo $r->render('component2', $data['component2']); ?>
     </div>
-    <a href="#" update-content-handler data-update-url="update.php?sku=10" data-callback="onUpdate">Update content for sku 10</a>
-    <a href="#" update-content-handler data-update-url="update.php?sku=7" data-callback="onUpdate">Update content for sku 7</a>
+    <a href="#" update-content-trigger data-update-url="update.php?sku=10" data-callback="onUpdate">Update content for sku 10</a>
+    <a href="#" update-content-trigger data-update-url="update.php?sku=7" data-callback="onUpdate">Update content for sku 7</a>
 </div>
 
 <?php
